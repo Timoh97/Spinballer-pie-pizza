@@ -37,54 +37,18 @@ body {
 
 .aside {
     position: relative;
-    margin-top: -910px;
+    margin-top: -980px;
     margin-left: 100px;
 }
 
-span {
+span,h2 {
     color: #ff022c;
-}
-#button1 {
-    color: whitesmoke; 
-    background-color: #ff022c;
-}
-
-tr,td,th {
-    padding: 5px;
-}
-
-.small-container {
-    position: relative;
-    margin-top: -300px;
-    margin-left: 400px;
-}
-
-small {
-    font-size: larger;
-    color: #ff523b;
 }
 
 #slogan {
-    font-size: x-larger;
+    font-size: x-large;
 }
-
-h2,#inputcrust01 {
-    color: #ff523b;
-}
-
-th {
-    text-align: left;
-    padding: 5px;
-    color: #fff;
-    font-weight: normal;
-    background: #ff523b;
-
-}
-
-.inputNum {
-    width: 50px;
-}
-
-#inputPhoneNumber{
-    width: 200px;
+.row {
+    display: flex;
+    justify-content: space-around;
 }

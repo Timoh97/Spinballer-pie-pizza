@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="index.css">
     <script   src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
+    <script   src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
+    <script src="js/jquery-3.3.1.js"></script>
     <script src="pizza.js"></script>
 </head>
 <body>
@@ -28,264 +30,60 @@
             <p id="intro">Feeling hungry? <br></p> 
             <h2>ORDER TASTY <br> $ FRESH PIZZA</h2> <br> 
             <p> from  <span>Spinballer pie pizza shop</span> </p>
-            <form action="">
-                <select class="custom-select" id="inputcrust01" placeholder="+ toppings?">
-                    <option value="0">+ toppings?</option>
-                    <option value="1">Sausages</option>
-                    <option value="2">Black olives</option>
-                    <option value="3">Green peppers</option>
-                    <option value="4">mushrooms</option>
-                    <option value="5">Onions</option>
-                    <option value="6">Bacon</option>
-                    <option value="7">pepperoni</option>
-                    <option value="8">spinach</option>
-                    <option value="9">pineapple</option>
-                  </select>
-            </form>
-        </div>
-        <div class="small-container">
-            <table>
-                <tr>
-                    <th>Pizza type</th>
-                    <th>Crust type</th>
-                    <th>size</th>
-                    <th>Quantity</th>
-                    <th>cost/pizza</th>
-                    <th>Type</th>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="./pizza-images/pizza1.jpg" alt="" width="100px"> <br>
-                        <small>Neopolitan pizza</small>
-                    </td>
-                    <td>
-                        <form action="" class="row-md-2 valid-form" id="form" method="POST">
-                        <select class="custom-select1" id="inputcrust0">
-                            <option value="0">none</option>
-                            <option value="1">Crispy</option>
-                            <option value="2">Stuffed</option>
-                            <option value="3">Gluten-free</option>
-                          </select>
-                        </form>
-                    </td>
-                    <td>
-                        <form action="" class="row-md-2 valid-form" id="form1" method="POST">
-                        <select class="customSelects" id="inputGroupSelect01">
-                            <option value="0">none</option>
-                            <option value="1">Small</option>
-                            <option value="2">Medium</option>
-                            <option value="3">Large</option>
-                          </select>
-                        </form>
-                    </td>
-                    <td><input class="inputNum" type="number"></td>
-                    <td>$20.00</td>
-                    <td>
-                        <form action="" class="row-md-2 valid-form" id="type" method="POST">
-                            <select class="customSelect" id="inputType">
-                              <option value="0">choose</option>
-                              <option value="1">yes</option>
-                              <option value="2">no</option>
-                              </select>
-                        </form>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="./pizza-images/pizza2.jpg" alt="" width="100px"> <br>
-                        <small>Chicago pizza</small>
-                    </td>
-                    <td>
-                        <form action="" class="row-md-2 valid-form" id="form2" method="POST">
-                        <select class="custom-select1" id="inputcrust02">
-                            <option value="0">none</option>
-                            <option value="1">Crispy</option>
-                            <option value="2">Stuffed</option>
-                            <option value="3">Gluten-free</option>
-                          </select>
-                        </form>
-                    </td>
-                    <td>
-                        <form action="" class="row-md-2 valid-form" id="form3" method="POST">
-                        <select class="customSelects" id="inputGroupSelect02">
-                            <option value="0">none</option>
-                            <option value="1">Small</option>
-                            <option value="2">Medium</option>
-                            <option value="3">Large</option>
-                          </select>
-                        </form>
-                    </td>
-                    <td><input class="inputNum" type="number"></td>
-                    <td>$30.00</td>
-                    <td>
-                        <form action="" class="row-md-2 valid-form" id="type1" method="POST">
-                            <select class="customSelect" id="inputType1">
-                              <option value="0">choose</option>
-                              <option value="1">yes</option>
-                              <option value="2">no</option>
-                              </select>
-                        </form>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="./pizza-images/pizza3.jpg" alt="" width="100px"> <br>
-                        <small>Detroit pizza</small>
-                    </td>
-                    <td>
-                        <form action="" class="row-md-2 valid-form" id="form4" method="POST">
-                        <select class="custom-select1" id="inputcrust03">
-                            <option value="0">none</option>
-                            <option value="1">Crispy</option>
-                            <option value="2">Stuffed</option>
-                            <option value="3">Gluten-free</option>
-                          </select>
-                        </form>
-                    </td>
-                    <td>
-                        <form action="" class="row-md-2 valid-form" id="form5" method="POST">
-                        <select class="customSelects" id="inputGroupSelect03">
-                            <option value="0">none</option>
-                            <option value="1">Small</option>
-                            <option value="2">Medium</option>
-                            <option value="3">Large</option>
-                          </select>
-                        </form>
-                    </td>
-                    <td><input class="inputNum" type="number"></td>
-                    <td>$35.00</td>
-                    <td>
-                        <form action="" class="row-md-2 valid-form" id="type2" method="POST">
-                            <select class="customSelect" id="inputType2">
-                              <option value="0">choose</option>
-                              <option value="1">yes</option>
-                              <option value="2">no</option>
-                              </select>
-                        </form>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="./pizza-images/pizza4.jpeg" alt="" width="100px"> <br>
-                        <small>Sicilian pizza</small>
-                    </td>
-                    <td>
-                        <form action="" class="row-md-2 valid-form" id="form6" method="POST">
-                        <select class="custom-select1" id="inputcrust04">
-                            <option value="0">none</option>
-                            <option value="1">Crispy</option>
-                            <option value="2">Stuffed</option>
-                            <option value="3">Gluten-free</option>
-                          </select>
-                        </form>
-                    </td>
-                    <td>
-                        <form action="" class="row-md-2 valid-form" id="form7" method="POST">
-                        <select class="customSelects" id="inputGroupSelect04">
-                            <option value="0">none</option>
-                            <option value="1">Small</option>
-                            <option value="2">Medium</option>
-                            <option value="3">Large</option>
-                          </select>
-                        </form>
-                    </td>
-                    <td><input class="inputNum" type="number"></td>
-                    <td>$27.00</td>
-                    <td>
-                        <form action="" class="row-md-2 valid-form" id="type3" method="POST">
-                            <select class="customSelect" id="inputType3">
-                              <option value="0">choose</option>
-                              <option value="1">yes</option>
-                              <option value="2">no</option>
-                              </select>
-                        </form>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="./pizza-images/pizza5.jpeg" alt="" width="100px"> <br>
-                        <small>Greek pizza</small> 
-                    </td>
-                    <td>
-                        <form action="" class="row-md-2 valid-form" id="form8" method="POST">
-                        <select class="custom-select1" id="inputcrust05">
-                            <option value="0">none</option>
-                            <option value="1">Crispy</option>
-                            <option value="2">Stuffed</option>
-                            <option value="3">Gluten-free</option>
-                          </select>
-                        </form>
-                    </td>
-                    <td>
-                        <form action="" class="row-md-2 valid-form" id="form9" method="POST">
-                        <select class="customSelects" id="inputGroupSelect05">
-                            <option value="0">none</option>
-                            <option value="1">Small</option>
-                            <option value="2">Medium</option>
-                            <option value="3">Large</option>
-                          </select>
-                        </form>
-                    </td>
-                    <td><input class="inputNum" type="number"></td>
-                    <td>$50.00</td>
-                    <td>
-                        <form action="" class="row-md-2 valid-form" id="type4" method="POST">
-                            <select class="customSelect" id="inputType4">
-                              <option value="0">choose</option>
-                              <option value="1">yes</option>
-                              <option value="2">no</option>
-                              </select>
-                        </form>
-                    </td>
-                    </tr>
-                <tr>
-                    <td>
-                        <img src="./pizza-images/pizza6.jpeg" alt="" width="100px"> <br>
-                        <small>California pizza</small>
-                    </td>
-                    <td>
-                        <form action="" class="row-md-2 valid-form" id="form10" method="POST">
-                        <select class="custom-select1" id="inputcrust06">
-                            <option value="0">none</option>
-                            <option value="1">Crispy</option>
-                            <option value="2">Stuffed</option>
-                            <option value="3">Gluten-free</option>
-                          </select>
-                        </form>
-                    </td>
-                    <td>
-                        <form action="" class="row-md-2 valid-form" id="form11" method="POST">
-                        <select class="customSelects" id="inputGroupSelect06">
-                            <option value="0">none</option>
-                            <option value="1">Small</option>
-                            <option value="2">Medium</option>
-                            <option value="3">Large</option>
-                          </select>
-                        </form>
-                    </td>
-                    <td><input class="inputNum" type="number"></td>
-                    <td>$15.00</td>
-                    <td>
-                        <form action="" class="row-md-2 valid-form" id="type5" method="POST">
-                            <select class="customSelect" id="inputType5">
-                              <option value="0">choose</option>
-                              <option value="1">yes</option>
-                              <option value="2">no</option>
-                              </select>
-                        </form>
-                    </td>
-                </tr>
-            </table>
-            <h2 class="text-center mt-1" id="result">Sub-total</h2>
-              <form action="" class="row-md-2 valid-form" id="form12" method="POST">
-                <input type="checkbox" id="checkbox1"> Do you want your pizza delivered?
-                <div class="form-group">
-                  <label for="inputnumber">Phone number</label>
-                  <input type="tel" class="form-control" id="inputPhoneNumber" aria-describedby="emailHelp" placeholder="valid phone number">
+        </div> 
+        <div class="row1">
+            <div>
+                <img src="./pizza-images/pizza1.jpg" alt="" width="300">
+                <div>
+    
                 </div>
-                <button type="submit" id="button1" class="btn btn-primary">Submit</button>
-              </form>
-        </div>
+            </div>
+            <div>
+                <img src="./pizza-images/pizza2.jpg" alt="" width="300">
+                <div>
+    
+                </div>
+            </div>
+            <div>
+                <img src="./pizza-images/pizza3.jpg" alt="" width="300">
+                <div>
+    
+                </div>
+            </div>
+            <div>
+                <img src="./pizza-images/pizza4.jpeg" alt="" width="300">
+                <div>
+    
+                </div>
+            </div>
+        </div> 
+        <div class="row2">
+            <div>
+                <img src="./pizza-images/pizza1.jpg" alt="" width="300">
+                <div>
+    
+                </div>
+            </div>
+            <div>
+                <img src="./pizza-images/pizza2.jpg" alt="" width="300">
+                <div>
+    
+                </div>
+            </div>
+            <div>
+                <img src="./pizza-images/pizza3.jpg" alt="" width="300">
+                <div>
+    
+                </div>
+            </div>
+            <div>
+                <img src="./pizza-images/pizza4.jpeg" alt="" width="300">
+                <div>
+    
+                </div>
+            </div>
+        </div> 
+
     </div>
 </body>
 </html>
