@@ -3,14 +3,14 @@ body {
 }
 .container {
     background-color: rgb(236, 235, 235);
-    height: 1200px;
+    height: 1600px;
     width: 1200px;
     margin: 25px 200px;
 }
 
 .row {
     border: black solid 3px;
-    height: 1100px;
+    height: 1500px;
     width: 1000px;
     margin: 45px 85px;
     border-radius: 15px;
@@ -37,7 +37,7 @@ body {
 
 .aside {
     position: relative;
-    margin-top: -980px;
+    margin-top: -1380px;
     margin-left: 100px;
 }
 
@@ -75,9 +75,20 @@ button {
 
 .pizzaName {
     background-color: wheat;
-    height: 150px;
+    height: 190px;
     width: 200px;
-    margin: 0px;
+    padding-left: 20px;
     border-collapse: collapse;
-    display: none;
+    border-radius: 5px;
+    /* display: none; */
+}
+
+ .order {display: flex;
+    flex-wrap: 0px;
+    width: 180px;
+}
+    
+#form {
+    margin-left: 450px;
+    margin-top: 0px;
 }

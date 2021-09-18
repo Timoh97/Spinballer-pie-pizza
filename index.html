@@ -36,7 +36,8 @@
                 <img src="./pizza-images/pizza1.jpg" alt="" width="200"> <br>
                 <button>view prices</button>
                 <div class="pizzaName">
-                    <h3>Neapolitan Pizza</h3>
+                    <h3>Neapol' Pizza</h3>
+                    <p>$8.00</p>
                     <h4>+Crusts</h4>
                     <p>+Gluten-free: $13.00</p>
                     <p>+Stuffed: 12.5</p>
@@ -50,6 +51,7 @@
                 </div>
                 <div class="pizzaName">
                     <h3>Greek Pizza</h3>
+                    <p>$7.00</p>
                     <h4>Crusts</h4>
                     <p>+Gluten-free: $11.00</p>
                     <p>+Stuffed: $10.00</p>
@@ -63,6 +65,7 @@
                 </div>
                 <div class="pizzaName">
                     <h3>Sicilian Pizza</h3>
+                    <p>$12.50</p>
                     <h4>Crusts</h4>
                     <p>+Gluten-free: $15.00</p>
                     <p>+Stuffed: $16.00</p>
@@ -77,7 +80,8 @@
                     <button>view prices</button>
                 </div>
                 <div class="pizzaName">
-                    <h3>Neapolitan Pizza</h3>
+                    <h3>Detroit Pizza</h3>
+                    <p>$10.00</p>
                     <h4>Crusts</h4>
                     <p>+Gluten-free: $13.00</p>
                     <p>+Stuffed: $13.50</p>
@@ -91,6 +95,7 @@
                 </div>
                 <div class="pizzaName">
                     <h3>Chicago Pizza</h3>
+                    <p>$9.00</p>
                     <h4>Crusts</h4>
                     <p>+Gluten-free: $12.90</p>
                     <p>+Stuffed: $13.20</p>
@@ -104,6 +109,7 @@
                 </div>
                 <div class="pizzaName">
                       <h3>New York Pizza</h3>
+                      <p>$6.50</p>
                       <h4>Crusts</h4>
                       <p>+Gluten-free: $10.50</p>
                       <p>+Stuffed: $11.50</p>
@@ -111,7 +117,49 @@
                 </div>
             </div>
         </div> 
-
+        <div>
+            <form class="orderForm-valid-form" id="form" method="POST">
+                <fieldset>
+                  <legend>Make order now <br>
+                    </legend>
+                    <label for="pizza-name">Name of pizza</label>
+                    <select class="order" id="pizza-name">
+                        <option value="1">Greek pizza</option>
+                        <option value="2">Sicilian pizza</option>
+                        <option value="3">Chicago pizza</option>
+                        <option value="4">Neopolitan pizza</option>
+                        <option value="5">Greek pizza</option>
+                        <option value="6">Detroit pizza</option>
+                      </select>
+                      <label for="pizza-toppings">Pizza toppings</label>
+                      <select class="order" id="pizza-toppings">
+                        <option value="0">none</option>
+                        <option value="1">Mushrooms</option>
+                        <option value="2">Pepperoni</option>
+                        <option value="3">Sausage</option>
+                        <option value="4">Onions</option>
+                        <option value="5">Black olives</option>
+                        <option value="6">Bacon</option>
+                      </select>
+                      <label for="pizza-crust">Pizza crust</label>
+                      <select class="order" id="pizza-crust">
+                        <option value="0">none</option>
+                        <option value="1">Gluten free</option>
+                        <option value="2">Crispy</option>
+                        <option value="3">Stuffed</option>
+                      </select>
+                  <!-- Pizza name:<input class="row" type="number" placeholder="pizza name" id="date">
+                  Crust type:<input class="row" type="text" placeholder="crust type" id="month">
+                  Quantity:<input class="row" type="number" placeholder="YYYY" id="year"> -->
+                  <label for="quantity">number of pizzas</label>
+                  <input class="order" type="number">
+                  <label class="order" for="phone number">Phone number</label>
+                  <input class="order" type="tel">
+                </fieldset>
+                <br>
+                <input type="submit" value="Submit" id="submitButton" class="btn btn-primary" onclick="generateName(); return false"/>
+              </form>
+              </div>
     </div>
 </body>
 </html>
