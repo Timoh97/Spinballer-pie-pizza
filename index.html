@@ -20,10 +20,10 @@
             <p class="text-center" id="slogan">"Good to the last slice"</p>
             </div>
            <div class="col">
-            <img id="logo" src="./pizza-images/logo.jpeg" alt="pizza logo" width="150px">
+            <img id="logo" src="./pizza-images/logo.jpeg" alt="pizza logo" width="175px">
            </div> 
            <div class="col">
-            <img id="logo1" src="./pizza-images/logo.jpeg" alt="pizza logo" width="150px">
+            <img id="logo1" src="./pizza-images/logo.jpeg" alt="pizza logo" width="175px">
            </div>  
         </div>
         <div class="aside">
@@ -33,9 +33,9 @@
         </div> 
         <div class="row1">
             <div class="imag">
-                <img src="./pizza-images/pizza1.jpg" alt="" width="200"> <br>
-                <button>view prices</button>
-                <div class="pizzaName">
+                <img id="imag1" src="./pizza-images/pizza1.jpg" alt="" width="200"> <br>
+                <button id="price1">view prices</button>
+                <div class="pizzaName" id="pizza1">
                     <h3>Neapol' Pizza</h3>
                     <p>$8.00</p>
                     <h4>+Crusts</h4>
@@ -46,10 +46,10 @@
             </div>
             <div class="imag">
                 <div>
-                    <img src="./pizza-images/pizza2.jpg" alt="" width="200"> <br>
-                    <button>view prices</button>
+                    <img id="imag2" src="./pizza-images/pizza2.jpg" alt="" width="200"> <br>
+                    <button id="price2">view prices</button>
                 </div>
-                <div class="pizzaName">
+                <div class="pizzaName" id="pizza2">
                     <h3>Greek Pizza</h3>
                     <p>$7.00</p>
                     <h4>Crusts</h4>
@@ -60,10 +60,10 @@
             </div>
             <div class="imag">
                 <div>
-                    <img src="./pizza-images/pizza3.jpg" alt="" width="200"> <br>
-                    <button>view prices</button>
+                    <img id="imag3" src="./pizza-images/pizza3.jpg" alt="" width="200"> <br>
+                    <button id="price3">view prices</button>
                 </div>
-                <div class="pizzaName">
+                <div class="pizzaName" id="pizza3">
                     <h3>Sicilian Pizza</h3>
                     <p>$12.50</p>
                     <h4>Crusts</h4>
@@ -76,10 +76,10 @@
         <div class="row2">
             <div class="imag">
                 <div>
-                    <img src="./pizza-images/pizza5.jpeg" alt="" width="120"> <br>
-                    <button>view prices</button>
+                    <img id="imag4" src="./pizza-images/pizza5.jpeg" alt="" width="120"> <br>
+                    <button id="price4">view prices</button>
                 </div>
-                <div class="pizzaName">
+                <div class="pizzaName" id="pizza4">
                     <h3>Detroit Pizza</h3>
                     <p>$10.00</p>
                     <h4>Crusts</h4>
@@ -90,10 +90,10 @@
             </div>
             <div class="imag">
                 <div>
-                    <img src="./pizza-images/pizza4.jpeg" alt="" width="140"> <br>
-                    <button>view prices</button>
+                    <img id="imag5" src="./pizza-images/pizza4.jpeg" alt="" width="140"> <br>
+                    <button id="price5">view prices</button>
                 </div>
-                <div class="pizzaName">
+                <div class="pizzaName" id="pizza5">
                     <h3>Chicago Pizza</h3>
                     <p>$9.00</p>
                     <h4>Crusts</h4>
@@ -104,10 +104,10 @@
             </div>
             <div class="imag">
                 <div>
-                    <img src="./pizza-images/pizza6.jpeg" alt="" width="200"> <br>
-                    <button>view prices</button>
+                    <img id="imag6" src="./pizza-images/pizza6.jpeg" alt="" width="200"> <br>
+                    <button id="price6">view prices</button>
                 </div>
-                <div class="pizzaName">
+                <div class="pizzaName" id="pizza6">
                       <h3>New York Pizza</h3>
                       <p>$6.50</p>
                       <h4>Crusts</h4>
@@ -152,9 +152,9 @@
                   Crust type:<input class="row" type="text" placeholder="crust type" id="month">
                   Quantity:<input class="row" type="number" placeholder="YYYY" id="year"> -->
                   <label for="quantity">number of pizzas</label>
-                  <input class="order" type="number">
+                  <input class="order" id="num" type="number">
                   <label class="order" for="phone number">Phone number</label>
-                  <input class="order" type="tel">
+                  <input class="order" id="tel" type="tel">
                 </fieldset>
                 <br>
                 <input type="submit" value="Submit" id="submitButton" class="btn btn-primary" onclick="generateName(); return false"/>
