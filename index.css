@@ -41,14 +41,43 @@ body {
     margin-left: 100px;
 }
 
-span,h2 {
+span,h2,button {
     color: #ff022c;
 }
 
-#slogan {
+#slogan,span {
     font-size: x-large;
 }
-.row {
+.row1 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+.row2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+/* .imag, .pizzaName {
+    border-collapse: collapse;
+    padding: 0px;
+    margin: 0px;
+} */
+
+img {
+    clip-path: circle();
+}
+button {
+    text-align: center;
+}
+
+.pizzaName {
+    background-color: wheat;
+    height: 150px;
+    width: 200px;
+    margin: 0px;
+    border-collapse: collapse;
+    display: none;
 }
