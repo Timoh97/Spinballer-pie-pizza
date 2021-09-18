@@ -1,0 +1,86 @@
+body {
+    background-color: rgba(19, 14, 14, 0.027);
+}
+.container {
+    background-color: rgb(236, 235, 235);
+    height: 1100px;
+    width: 1200px;
+    margin: 25px 200px;
+}
+
+.row {
+    border: black solid 3px;
+    height: 1000px;
+    width: 1000px;
+    margin: 45px 85px;
+    border-radius: 15px;
+}
+
+#logo {
+    position: relative;
+    margin-top: -85px;
+    margin-left: 10px;
+    padding: 2px;
+    
+}
+
+#logo1 {
+    position: relative;
+    margin-top: -130px;
+    margin-left: 850px;
+    padding: 2px;  
+}
+
+#intro{
+    font-size: large;
+}
+
+.aside {
+    position: relative;
+    margin-top: -910px;
+    margin-left: 100px;
+}
+
+span {
+    color: #ff022c;
+}
+#button1 {
+    color: whitesmoke; 
+    background-color: #ff022c;
+}
+
+tr,td,th {
+    padding: 5px;
+}
+
+.small-container {
+    position: relative;
+    margin-top: -200px;
+    margin-left: 400px;
+}
+
+small {
+    font-size: larger;
+    color: #ff523b;
+}
+
+h2 {
+    color: #ff523b;
+}
+
+th {
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    font-weight: normal;
+    background: #ff523b;
+
+}
+
+.inputNum {
+    width: 80px;
+}
+
+#inputPhoneNumber{
+    width: 200px;
+}
