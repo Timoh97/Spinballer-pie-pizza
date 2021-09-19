@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="pizza.js"></script>
+</head>
+<body>
+    <form class="row-md-2 valid-form" id="form" method="POST">
+        <fieldset>
+          <legend>Awesome, let's do it. <br>
+             Input your DOB to get started:
+            </legend>
+          Date:<input class="row" type="number" placeholder="DD" id="date">
+          Month:<input class="row" type="text" placeholder="MonthInFull-1stLetterIncaps" id="month">
+          Year:<input class="row" type="number" placeholder="YYYY" id="year">
+          <select id="gender">
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+          </select>
+        </fieldset>
+        <br>
+        <input type="submit" value="Submit" id="submitButton" class="btn btn-primary" onclick="generateName(); return false"/>
+      </form>
+</body>
+</html>

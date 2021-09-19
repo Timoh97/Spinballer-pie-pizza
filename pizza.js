@@ -27,16 +27,23 @@ $(document).ready(function(){
         $("#imag6").toggle()
     })
 
+})
+
 // Get the variables from user
 
-$("#submitButton").submit(function(){
-    var nameOfPizza = $("#pizza-name").val()
-    var pizzaToppings = $("#pizza-toppings").val()
-    var pizzaCrust = $("#pizza-crust").val()
-    var numberOfPizzas = $("#num").val()
-    var telNumber = $("#tel").val()
-})
-  
-console.log (nameOfPizza)
+function generateName(){
+    var quantity = document.getElementById("quantity").value;
+    var pizzaName = document.getElementById("pizzaName").value;
+    var delivery = document.getElementById("delivery").value;
+    var pizzaToppings = document.getElementById("toppings").value;
+    var pizzaCrust = document.getElementById("crust").value;
+    var phoneNumber = document.getElementById("phoneNumber").value;
+    alert(pizzaName)
+    alert(pizzaToppings)
+    alert(pizzaCrust)
+    alert (quantity)
+    alert (phoneNumber)
+    alert (delivery)
+}
 
-})
+

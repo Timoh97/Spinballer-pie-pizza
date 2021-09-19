@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="index.css">
     <script   src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
-    <script   src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
-    <script src="js/jquery-3.3.1.js"></script>
     <script src="pizza.js"></script>
 </head>
 <body>
@@ -38,7 +36,7 @@
                 <div class="pizzaName" id="pizza1">
                     <h3>Neapol' Pizza</h3>
                     <p>$8.00</p>
-                    <h4>+Crusts</h4>
+                    <h4>Crusts</h4>
                     <p>+Gluten-free: $13.00</p>
                     <p>+Stuffed: 12.5</p>
                     <p>+Crispy: $12.00</p>
@@ -118,7 +116,7 @@
             </div>
         </div> 
         <div>
-            <form class="orderForm-valid-form" id="form" method="POST">
+            <!-- <form class="orderForm-valid-form" id="form" method="POST">
                 <fieldset>
                   <legend>Make order now <br>
                     </legend>
@@ -128,7 +126,7 @@
                         <option value="2">Sicilian pizza</option>
                         <option value="3">Chicago pizza</option>
                         <option value="4">Neopolitan pizza</option>
-                        <option value="5">Greek pizza</option>
+                        <option value="5">New York pizza</option>
                         <option value="6">Detroit pizza</option>
                       </select>
                       <label for="pizza-toppings">Pizza toppings</label>
@@ -148,9 +146,6 @@
                         <option value="2">Crispy</option>
                         <option value="3">Stuffed</option>
                       </select>
-                  <!-- Pizza name:<input class="row" type="number" placeholder="pizza name" id="date">
-                  Crust type:<input class="row" type="text" placeholder="crust type" id="month">
-                  Quantity:<input class="row" type="number" placeholder="YYYY" id="year"> -->
                   <label for="quantity">number of pizzas</label>
                   <input class="order" id="num" type="number">
                   <label class="order" for="phone number">Phone number</label>
@@ -158,7 +153,55 @@
                 </fieldset>
                 <br>
                 <input type="submit" value="Submit" id="submitButton" class="btn btn-primary" onclick="generateName(); return false"/>
+              </form> -->
+
+
+              <div>
+              <form class="row1-md-2 valid-form" id="form" method="POST">
+                <fieldset>
+                  <legend> <br>
+                     Make order here:
+                    </legend>
+                    <label for="pizza-name">Name of pizza</label> <br>
+                  <select class="order" id="pizzaName">
+                    <option value="none">select</option>
+                    <option value="Greek pizza">Greek pizza</option>
+                    <option value="Sicilian pizza">Sicilian pizza</option>
+                    <option value="Chicago pizza">Chicago pizza</option>
+                    <option value="Neopolitan pizza">Neopolitan pizza</option>
+                    <option value="New York pizza">New York pizza</option>
+                    <option value="Detroit pizza">Detroit pizza</option>
+                  </select>
+                  <label for="pizza-toppings">Pizza toppings</label> <br>
+                  <select class="order" id="toppings">
+                    <option value="none">none</option>
+                    <option value="mushroom toppings">Mushrooms</option>
+                    <option value="pepperoni toppings">Pepperoni</option>
+                    <option value="Sausage toppings">Sausage</option>
+                    <option value="Onions toppings">Onions</option>
+                    <option value="Black olives toppings">Black olives</option>
+                    <option value="Bacon toppings">Bacon</option>
+                  </select>
+                  <label for="pizza-crust">Pizza crust</label> <br>
+                  <select class="order" id="crust">
+                    <option value="none">none</option>
+                    <option value="Gluten free crust">Gluten free</option>
+                    <option value="Crispy crust">Crispy</option>
+                    <option value="Stuffed crust">Stuffed</option>
+                  </select>
+                  <label for="quantity">number of pizzas</label> <br>
+                  <input class="row1" type="number" placeholder="no. of pizzas" id="quantity">
+                  phone number:<input class="row1" type="tel" placeholder="e.g 0791xxxxxx" id="phoneNumber">
+                  <label for="pizza-delivery">You want your pizza delivered?</label> <br>
+                  <select id="delivery">
+                    <option value="yes">YES</option>
+                    <option value="no">NO</option>
+                  </select>
+                </fieldset>
+                <br>
+                <input type="submit" value="Submit" id="submitButton" class="btn btn-primary" onclick="generateName(); return false"/>
               </form>
+              </div>
               </div>
     </div>
 </body>
