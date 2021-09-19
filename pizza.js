@@ -33,17 +33,28 @@ $(document).ready(function(){
 
 function generateName(){
     var quantity = document.getElementById("quantity").value;
+    var pizzaSize = document.getElementById("size").value;
     var pizzaName = document.getElementById("pizzaName").value;
     var delivery = document.getElementById("delivery").value;
     var pizzaToppings = document.getElementById("toppings").value;
     var pizzaCrust = document.getElementById("crust").value;
     var phoneNumber = document.getElementById("phoneNumber").value;
     alert(pizzaName)
+    alert(pizzaSize)
     alert(pizzaToppings)
     alert(pizzaCrust)
     alert (quantity)
     alert (phoneNumber)
     alert (delivery)
+
+
+
+   var quantityOfPizza = parseInt(quantity);
+   var telephone = parseInt(phoneNumber);
+   alert (typeof(telephone))
+   alert (typeof(quantityOfPizza))
+
+
 }
 
 
