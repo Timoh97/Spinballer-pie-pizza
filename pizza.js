@@ -39,13 +39,15 @@ function generateName(){
     var pizzaToppings= document.getElementById("toppings").value;
     var pizzaCrust = document.getElementById("crust").value;
     var phoneNumber = document.getElementById("phoneNumber").value;
+
+
     alert(pizzaName)
     alert(pizzaSize)
     alert(pizzaToppings)
     alert(pizzaCrust)
     alert (quantity)
     alert (phoneNumber)
-    alert (delivepizzaToppingsry)
+    
 
 
     
@@ -54,8 +56,6 @@ function generateName(){
    alert (typeof(pizzaCrust))
    alert (typeof(pizzaToppings))
 
-
-   var pizzas = ["Greek pizza", "Sicilian pizza", "Chicago pizza", "detroit", "newYork", "sicilian"];
 
    if (pizzaName === "Greek pizza" ) {
     price = (8.00*100);
@@ -108,7 +108,6 @@ function generateName(){
 
 
 var Total =((price+price1+price2+price3)*quantityOfPizza)
-alert (Total)
 
 if ( delivery == "yes") {
    var deliver = prompt("ENTER ADDRESS FOR DELIVERY WITHIN NAIROBI")
@@ -117,42 +116,6 @@ if ( delivery == "yes") {
  else if (delivery == "no") {
         alert ("Your total is "+ Total)   
     }
-
-    
-
-
-
-
-
-//    neopolitanPizza = 8.00
-//    total1 = (neopolitanPizza + gluten-free)
-//    total2 = (neopolitanPizza + stuffed)
-//    total3 = (neopolitanPizza + crispy)
-
-//    greek = 7.00
-//    total4 = (greek + Gluten-free) 
-//    total5 = (greek + stuffed) 
-//    total6 = (greek + crispy) 
-
-//    chicago = 9.00
-//    total7 = (chicago + gluten-free) 
-//    total8 = (chicago + stuffed) 
-//    total9 = (chicago + crispy) 
-
-//    detroit = 10.00
-//    total10 = (detroit + gluten-free) 
-//    total11 = (detroit + stuffed) 
-//    total12 = (detroit + crispy) 
-
-//    newYork =6.50
-//    total13 = (newYork + gluten-free)
-//    total14= (newYork + stuffed)
-//    total15 = (newYork + crispy)
-
-//    sicilian =12.50
-//    total16 = (sicilian + gluten-free)
-//    total17 = (sicilian + stuffed)
-//    total18 = (sicilian + crispy)
 
 
 }
