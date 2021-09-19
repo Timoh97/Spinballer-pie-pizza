@@ -36,7 +36,7 @@ function generateName(){
     var pizzaSize = document.getElementById("size").value;
     var pizzaName = document.getElementById("pizzaName").value;
     var delivery = document.getElementById("delivery").value;
-    var pizzaToppings = document.getElementById("toppings").value;
+    var pizzaToppings= document.getElementById("toppings").value;
     var pizzaCrust = document.getElementById("crust").value;
     var phoneNumber = document.getElementById("phoneNumber").value;
     alert(pizzaName)
@@ -45,7 +45,7 @@ function generateName(){
     alert(pizzaCrust)
     alert (quantity)
     alert (phoneNumber)
-    alert (delivery)
+    alert (delivepizzaToppingsry)
 
 
     
@@ -58,38 +58,56 @@ function generateName(){
    var pizzas = ["Greek pizza", "Sicilian pizza", "Chicago pizza", "detroit", "newYork", "sicilian"];
 
    if (pizzaName === "Greek pizza" ) {
-    price = (8.00*130);
+    price = (8.00*100);
     }
        else if (pizzaName=== "Sicilian pizza")
    {
-    price = (7.00*130);
+    price = (7.00*100);
        }
        else if (pizzaName=== "Chicago pizza"){
-    price = (6.50*140);
+    price = (6.50*100);
        }
        else if (pizzaName=== "Neopolitan pizza") {
-    price = (12.50*160);
+    price = (12.50*100);
        }
        else if (pizzaName==="New York pizza") {
-    price = (10.00*150);
+    price = (10.00*100);
        }
        else if (pizzaName==="Detroit pizza") {
-    price =(9.00*110);
+    price =(9.00*100);
  }
 
- if (pizzaCrust=="Gluten free crust" || pizzaSize == "small"){
-    price1=600
+ if (pizzaCrust=="Gluten free crust"){
+    price1=300
  }
- else if(pizzaCrust=="Crispy crust" ||  pizzaSize == "medium"){
-   price1=700
+ else if(pizzaCrust=="Crispy crust"){
+   price1=400
  }
- else if(pizzaCrust=="Stuffed crust" ||  pizzaSize == "Large"){
-    price1=800
+ else if(pizzaCrust=="Stuffed crust"){
+    price1=500
+ }
+
+ if (pizzaToppings=="mushroom toppings" || pizzaToppings=="pepperoni toppings" || pizzaToppings =="Sausage toppings" || pizzaToppings =="Onions toppings"|| pizzaToppings=="Black olives toppings"|| pizzaToppings=="Bacon toppings" ){
+    price3=150
+ }
+ else {
+    price3=0
  }
 
 
+ if (pizzaSize == "small"){
+    price2=600
+ }
+ else if (pizzaSize == "medium"){
+    price2=600
+ }
+ else if (pizzaSize == "Large"){
+    price2=600
 
-var Total =(price*quantityOfPizza+price1)
+ }
+
+
+var Total =((price+price1+price2+price3)*quantityOfPizza)
 alert (Total)
 
 if ( delivery == "yes") {
