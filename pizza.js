@@ -58,33 +58,33 @@ function generateName(){
    var pizzas = ["Greek pizza", "Sicilian pizza", "Chicago pizza", "detroit", "newYork", "sicilian"];
 
    if (pizzaName === "Greek pizza" ) {
-    price = (8.00*100);
+    price = (8.00*130);
     }
        else if (pizzaName=== "Sicilian pizza")
    {
-    price = (7.00*100);
+    price = (7.00*130);
        }
        else if (pizzaName=== "Chicago pizza"){
-    price = (6.50*100);
+    price = (6.50*140);
        }
        else if (pizzaName=== "Neopolitan pizza") {
-    price = (12.50*100);
+    price = (12.50*160);
        }
        else if (pizzaName==="New York pizza") {
-    price = (10.00*100);
+    price = (10.00*150);
        }
        else if (pizzaName==="Detroit pizza") {
-    price =(9.00*100);
+    price =(9.00*110);
  }
 
  if (pizzaCrust=="Gluten free crust" || pizzaSize == "small"){
-    price1=200
+    price1=600
  }
  else if(pizzaCrust=="Crispy crust" ||  pizzaSize == "medium"){
-   price1=300
+   price1=700
  }
- else if(pizzaCrust=="Crispy crust" ||  pizzaSize == "Large"){
-    price1=350
+ else if(pizzaCrust=="Stuffed crust" ||  pizzaSize == "Large"){
+    price1=800
  }
 
 
@@ -93,7 +93,7 @@ var Total =(price*quantityOfPizza+price1)
 alert (Total)
 
 if ( delivery == "yes") {
-   var deliver = prompt("ENTER ADDRESS FOR DELIVERY")
+   var deliver = prompt("ENTER ADDRESS FOR DELIVERY WITHIN NAIROBI")
     alert("We shall deliver your order at "+deliver+" and total cost is "+ Total + " plus delivery fee of 200")
     }
  else if (delivery == "no") {
@@ -106,35 +106,35 @@ if ( delivery == "yes") {
 
 
 
-   neopolitanPizza = 8.00
-   total1 = (neopolitanPizza + gluten-free)
-   total2 = (neopolitanPizza + stuffed)
-   total3 = (neopolitanPizza + crispy)
+//    neopolitanPizza = 8.00
+//    total1 = (neopolitanPizza + gluten-free)
+//    total2 = (neopolitanPizza + stuffed)
+//    total3 = (neopolitanPizza + crispy)
 
-   greek = 7.00
-   total4 = (greek + Gluten-free) 
-   total5 = (greek + stuffed) 
-   total6 = (greek + crispy) 
+//    greek = 7.00
+//    total4 = (greek + Gluten-free) 
+//    total5 = (greek + stuffed) 
+//    total6 = (greek + crispy) 
 
-   chicago = 9.00
-   total7 = (chicago + gluten-free) 
-   total8 = (chicago + stuffed) 
-   total9 = (chicago + crispy) 
+//    chicago = 9.00
+//    total7 = (chicago + gluten-free) 
+//    total8 = (chicago + stuffed) 
+//    total9 = (chicago + crispy) 
 
-   detroit = 10.00
-   total10 = (detroit + gluten-free) 
-   total11 = (detroit + stuffed) 
-   total12 = (detroit + crispy) 
+//    detroit = 10.00
+//    total10 = (detroit + gluten-free) 
+//    total11 = (detroit + stuffed) 
+//    total12 = (detroit + crispy) 
 
-   newYork =6.50
-   total13 = (newYork + gluten-free)
-   total14= (newYork + stuffed)
-   total15 = (newYork + crispy)
+//    newYork =6.50
+//    total13 = (newYork + gluten-free)
+//    total14= (newYork + stuffed)
+//    total15 = (newYork + crispy)
 
-   sicilian =12.50
-   total16 = (sicilian + gluten-free)
-   total17 = (sicilian + stuffed)
-   total18 = (sicilian + crispy)
+//    sicilian =12.50
+//    total16 = (sicilian + gluten-free)
+//    total17 = (sicilian + stuffed)
+//    total18 = (sicilian + crispy)
 
 
 }
