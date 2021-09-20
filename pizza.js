@@ -48,7 +48,6 @@ $(document).ready(function(){
            $("#pizza6").toggle()
            $("#imag6").toggle()
        })
-   
    })
    
    // Get the variables from user
@@ -67,10 +66,8 @@ $(document).ready(function(){
 
        
       var quantityOfPizza = parseInt(quantity);
-      var telephone = parseInt(phoneNumber);
       var order = "You ordered "+quantityOfPizza+" , "+pizzaSize+" "+pizzaName+" , "+pizzaCrust+" , "+pizzaToppings
        alert(order)
-   
       if (pizzaName === "Greek pizza" ) {
        price = (8.00*100);
        }
@@ -92,37 +89,37 @@ $(document).ready(function(){
     }
    
     if (pizzaCrust=="Gluten free crust"){
-       price1=300
+       price1=300;
     }
     else if(pizzaCrust=="Crispy crust"){
-      price1=400
+      price1=400;
     }
     else if(pizzaCrust=="Stuffed crust"){
-       price1=500
+       price1=500;
     }
    
     if (pizzaToppings=="mushroom toppings" || pizzaToppings=="pepperoni toppings" || pizzaToppings =="Sausage toppings" || pizzaToppings =="Onions toppings"|| pizzaToppings=="Black olives toppings"|| pizzaToppings=="Bacon toppings" ){
-       price3=150
+       price3=150;
     }
     else {
-       price3=0
+       price3=0;
     }
    
    
     if (pizzaSize == "small"){
-       price2=300
+       price2=300;
     }
     else if (pizzaSize == "medium"){
-       price2=400
+       price2=400;
     }
     else if (pizzaSize == "Large"){
-       price2=500
+       price2=500;
    
     }
    
    var delivery1=200
    var Total =((price+price1+price2+price3)*quantityOfPizza)
-   var deliveryFee=parseInt(delivery1)
+   var delivery1=parseInt(delivery1)
    Total=Total
    
    
