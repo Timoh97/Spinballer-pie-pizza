@@ -33,6 +33,8 @@ $(document).ready(function(){
 
 // Get the variables from user
 
+
+
 function generateName(){
 
    // USER INTERFACE
@@ -121,5 +123,7 @@ if ( delivery == "yes") {
 
 
 }
+
+
 
 
