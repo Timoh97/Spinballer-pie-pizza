@@ -39,22 +39,13 @@ function generateName(){
     var pizzaToppings= document.getElementById("toppings").value;
     var pizzaCrust = document.getElementById("crust").value;
     var phoneNumber = document.getElementById("phoneNumber").value;
-
-
-    alert(pizzaName)
-    alert(pizzaSize)
-    alert(pizzaToppings)
-    alert(pizzaCrust)
-    alert (quantity)
-    alert (phoneNumber)
     
 
 
     
    var quantityOfPizza = parseInt(quantity);
    var telephone = parseInt(phoneNumber);
-   alert (typeof(pizzaCrust))
-   alert (typeof(pizzaToppings))
+
 
 
    if (pizzaName === "Greek pizza" ) {
@@ -111,15 +102,13 @@ var Total =((price+price1+price2+price3)*quantityOfPizza)
 var deliveryFee=parseInt(delivery1)
 Total=Total+deliveryFee
 
-alert( Total)
-alert(typeof(Total))
 
 if ( delivery == "yes") {
    var deliver = prompt("ENTER ADDRESS FOR DELIVERY WITHIN NAIROBI")
     alert("We shall deliver the order to "+ phoneNumber + " at " +deliver+" and total cost is "+ Total +" inclusive of delivery charges")
     }
  else if (delivery == "no") {
-        alert ("Pick your pizza from our PIZZERIA SHOP. Total cost is "+ Total)   
+        alert ("Pick your pizza from our PIZZERIA SHOP  . Total cost is "+ Total)   
     }
 
 
