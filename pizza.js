@@ -2,6 +2,8 @@ $(document).ready(function(){
 
 //   TOOGLE THE PRICES FOR PIZZA
 
+   //   USER INTERFACE
+
     $("#price1").click(function(){
         $("#pizza1").toggle()
         $("#imag1").toggle()
@@ -32,6 +34,9 @@ $(document).ready(function(){
 // Get the variables from user
 
 function generateName(){
+
+   // USER INTERFACE
+
     var quantity = document.getElementById("quantity").value;
     var pizzaSize = document.getElementById("size").value;
     var pizzaName = document.getElementById("pizzaName").value;
@@ -45,6 +50,9 @@ function generateName(){
     
    var quantityOfPizza = parseInt(quantity);
    var telephone = parseInt(phoneNumber);
+
+
+      //  BUSINESS LOGIC
 
 
 
