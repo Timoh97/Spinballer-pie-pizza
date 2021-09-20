@@ -68,7 +68,7 @@ $(document).ready(function(){
        
       var quantityOfPizza = parseInt(quantity);
       var telephone = parseInt(phoneNumber);
-      var order = "You ordered "+quantityOfPizza+","+pizzaSize+""+pizzaName+","+pizzaCrust+","+pizzaToppings
+      var order = "You ordered "+quantityOfPizza+" , "+pizzaSize+" "+pizzaName+" , "+pizzaCrust+" , "+pizzaToppings
        alert(order)
    
       if (pizzaName === "Greek pizza" ) {
