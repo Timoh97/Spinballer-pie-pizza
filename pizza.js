@@ -65,6 +65,8 @@ $(document).ready(function(){
        var phoneNumber = document.getElementById("phoneNumber").value;
 
        
+
+      //  BUSINESS LOGIC
       var quantityOfPizza = parseInt(quantity);
       var order = "You ordered "+quantityOfPizza+" , "+pizzaSize+" "+pizzaName+" , "+pizzaCrust+" , "+pizzaToppings
        alert(order)
@@ -122,7 +124,8 @@ $(document).ready(function(){
    var delivery1=parseInt(delivery1)
    Total=Total
    
-   
+   // USER INTERFACE
+
    if ( delivery == "yes") {
       var deliver = prompt("ENTER ADDRESS FOR DELIVERY WITHIN NAIROBI")
        alert("We shall deliver the order to "+ phoneNumber + " at " + deliver +" and total cost is "+ Total +" plus "+""+ delivery1 +" delivery fee")

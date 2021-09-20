@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,28 +8,29 @@
     <title>pizza shop</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="index.css">
-    <script   src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="pizza.js"></script>
 </head>
+
 <body>
     <div class="container">
         <div class="row">
             <div class="col">
-            <h2 class="text-center">PIZZERIA SHOP</h2>
-            <p class="text-center" id="slogan">"Good to the last slice"</p>
+                <h2 class="text-center">PIZZERIA SHOP</h2>
+                <p class="text-center" id="slogan">"Good to the last slice"</p>
             </div>
-           <div class="col">
-            <img id="logo" src="./pizza-images/logo.jpeg" alt="pizza logo" width="175px">
-           </div> 
-           <div class="col">
-            <img id="logo1" src="./pizza-images/logo.jpeg" alt="pizza logo" width="175px">
-           </div>  
+            <div class="col">
+                <img id="logo" src="./pizza-images/logo.jpeg" alt="pizza logo" width="175px">
+            </div>
+            <div class="col">
+                <img id="logo1" src="./pizza-images/logo.jpeg" alt="pizza logo" width="175px">
+            </div>
         </div>
         <div class="aside">
-            <p id="intro">Feeling hungry? <br></p> 
-            <h2>ORDER TASTY <br> $ FRESH PIZZA</h2> <br> 
-            <p> from  <span>Spinballer pie pizza shop</span> </p>
-        </div> 
+            <p id="intro">Feeling hungry? <br></p>
+            <h2>ORDER TASTY <br> $ FRESH PIZZA</h2> <br>
+            <p> from <span>Spinballer pie pizza shop</span> </p>
+        </div>
         <div class="row1">
             <div class="imag">
                 <img id="imag1" src="./pizza-images/pizza1.jpg" alt="" width="200"> <br>
@@ -70,7 +72,7 @@
                     <p>+Crispy: $17.50</p>
                 </div>
             </div>
-        </div> 
+        </div>
         <div class="row2">
             <div class="imag">
                 <div>
@@ -106,24 +108,23 @@
                     <button id="price6">view prices</button>
                 </div>
                 <div class="pizzaName" id="pizza6">
-                      <h3>New York Pizza</h3>
-                      <p>$6.00</p>
-                      <h4>Crusts</h4>
-                      <p>+Gluten-free: $9.50</p>
-                      <p>+Stuffed: $10.50</p>
-                      <p>+Crispy: $11.50</p>
+                    <h3>New York Pizza</h3>
+                    <p>$6.00</p>
+                    <h4>Crusts</h4>
+                    <p>+Gluten-free: $9.50</p>
+                    <p>+Stuffed: $10.50</p>
+                    <p>+Crispy: $11.50</p>
                 </div>
             </div>
-        </div> 
+        </div>
         <div>
-              <div>
-              <form class="row1-md-2 valid-form" id="form" method="POST">
-                <fieldset>
-                  <legend> <br>
-                     Make order here:
-                    </legend>
-                    <label for="pizza-name">Name of pizza</label> <br>
-                  <select class="order" id="pizzaName">
+            <div>
+                <form class="row1-md-2 valid-form" id="form" method="POST">
+                    <fieldset>
+                        <legend> <br> Make order here:
+                        </legend>
+                        <label for="pizza-name">Name of pizza</label> <br>
+                        <select class="order" id="pizzaName">
                     <option value="none">select</option>
                     <option value="Greek pizza">Greek pizza@800</option>
                     <option value="Sicilian pizza">Sicilian pizza@700</option>
@@ -132,14 +133,14 @@
                     <option value="New York pizza">New York pizza@1000</option>
                     <option value="Detroit pizza">Detroit pizza@900</option>
                   </select>
-                <label for="pizza-crust">Pizza size</label> <br>
-                <select class="orders" id="size">
+                        <label for="pizza-crust">Pizza size</label> <br>
+                        <select class="orders" id="size">
                   <option value="small">Small@300</option>
                   <option value="medium">Medium@400</option>
                   <option value="Large">Large@500</option>
                 </select> <br>
-                  <label for="pizza-toppings">Pizza toppings</label> <br>
-                  <select class="order" id="toppings">
+                        <label for="pizza-toppings">Pizza toppings</label> <br>
+                        <select class="order" id="toppings">
                     <option value="none">none</option>
                     <option value="mushroom toppings">Mushrooms@150</option>
                     <option value="pepperoni toppings">Pepperoni@150</option>
@@ -148,27 +149,27 @@
                     <option value="Black olives toppings">Black olives@150</option>
                     <option value="Bacon toppings">Bacon@150</option>
                   </select>
-                  <label for="pizza-crust">Pizza crust</label> <br>
-                  <select class="order" id="crust">
+                        <label for="pizza-crust">Pizza crust</label> <br>
+                        <select class="order" id="crust">
                     <option value="none">none</option>
                     <option value="Gluten free crust">Gluten free@300</option>
                     <option value="Crispy crust">Crispy@400</option>
                     <option value="Stuffed crust">Stuffed@500</option>
                   </select>
-                  <label for="quantity">number of pizzas</label> <br>
-                  <input class="row1" type="number" placeholder="no. of pizzas" id="quantity">
-                  phone number:<input class="row1" type="tel" placeholder="e.g 0791xxxxxx" id="phoneNumber">
-                  <label for="pizza-delivery">You want your pizza delivered?</label> <br>
-                  <select id="delivery">
+                        <label for="quantity">number of pizzas</label> <br>
+                        <input class="row1" type="number" placeholder="no. of pizzas" id="quantity"> phone number:<input class="row1" type="tel" placeholder="e.g 0791xxxxxx" id="phoneNumber">
+                        <label for="pizza-delivery">You want your pizza delivered?</label> <br>
+                        <select id="delivery">
                     <option value="yes">YES@200</option>
                     <option value="no">NO</option>
                   </select>
-                </fieldset>
-                <br>
-                <input type="submit" value="Submit" id="submitButton" class="btn btn-primary" onclick="generateName(); return false"/>
-              </form>
-              </div>
-              </div>
+                    </fieldset>
+                    <br>
+                    <input type="submit" value="Submit" id="submitButton" class="btn btn-primary" onclick="generateName(); return false" />
+                </form>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
