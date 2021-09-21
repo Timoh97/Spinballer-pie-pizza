@@ -1,4 +1,24 @@
-body {
+@media (min-width :900px) {
+    .container {
+        max-width: 900px;
+    }
+h2 {
+    color: #ff022c;
+}
+
+}
+
+
+@media (min-width :1500px) {
+    .container {
+        max-width: 1300px;
+    }
+h2 {
+    color: #ff022c;
+}
+}
+ 
+ body {
     background-color: rgba(19, 14, 14, 0.027);
 }
 
@@ -63,12 +83,6 @@ span {
     justify-content: space-evenly;
     margin: 10px;
 }
-
-/* .imag, .pizzaName {
-    border-collapse: collapse;
-    padding: 0px;
-    margin: 0px;
-} */
 
 img {
     clip-path: circle();
